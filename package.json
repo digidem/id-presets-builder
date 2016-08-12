@@ -1,0 +1,20 @@
+{
+  "name": "id-presets-builder",
+  "version": "1.0.0",
+  "description": "Build iD presets",
+  "main": "index.js",
+  "bin": {
+    "id-presets-builder": "id-presets-builder.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gregor MacLennan / Digital Democracy",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^7.0.5",
+    "js-yaml": "^3.6.1",
+    "jsonschema": "^1.1.0",
+    "lodash": "^4.15.0"
+  }
+}
