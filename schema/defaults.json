@@ -1,0 +1,24 @@
+{
+    "title": "Defaults",
+    "description": "A list of preset and category defaults to show in iD UI",
+    "definitions": {
+        "ids": {
+            "description": "Array of preset and category ids",
+            "type": "array",
+            "required": true,
+            "uniqueItems": true,
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "type": "object",
+    "properties": {
+        "area": { "$ref": "#/definitions/ids" },
+        "line": { "$ref": "#/definitions/ids" },
+        "point": { "$ref": "#/definitions/ids" },
+        "vertex": { "$ref": "#/definitions/ids" },
+        "relation": { "$ref": "#/definitions/ids" }
+    },
+    "additionalProperties": false
+}

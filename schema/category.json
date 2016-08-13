@@ -1,0 +1,30 @@
+{
+    "title": "Category",
+    "description": "Groups presets for UI",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The English name for the category",
+            "type": "string",
+            "required": true
+        },
+        "geometry": {
+            "description": "Geometry type of the members",
+            "type": "string",
+            "enum": ["point", "vertex", "line", "area", "relation"],
+            "required": true
+        },
+        "icon": {
+            "description": "Name of icon which represents this category",
+            "type": "string"
+        },
+        "members": {
+            "description": "List of presets in this category",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "additionalProperties": false
+}

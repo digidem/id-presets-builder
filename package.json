@@ -4,7 +4,7 @@
   "description": "Build iD presets",
   "main": "index.js",
   "bin": {
-    "id-presets-builder": "id-presets-builder.js"
+    "id-presets": "bin/id-presets-builder.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +15,11 @@
     "glob": "^7.0.5",
     "js-yaml": "^3.6.1",
     "jsonschema": "^1.1.0",
-    "lodash": "^4.15.0"
+    "lodash": "^4.15.0",
+    "mkdirp": "^0.5.1",
+    "run-parallel": "^1.1.6"
+  },
+  "devDependencies": {
+    "standard": "^7.1.2"
   }
 }
