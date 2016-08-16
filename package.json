@@ -21,5 +21,20 @@
   },
   "devDependencies": {
     "standard": "^7.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digidem/id-presets-builder.git"
+  },
+  "keywords": [
+    "id",
+    "openstreetmap",
+    "osm",
+    "ideditor",
+    "presets"
+  ],
+  "bugs": {
+    "url": "https://github.com/digidem/id-presets-builder/issues"
+  },
+  "homepage": "https://github.com/digidem/id-presets-builder#readme"
 }
