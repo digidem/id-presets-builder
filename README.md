@@ -29,7 +29,7 @@ $ npm install --global id-presets-builder
 ## Usage
 
 ```
-$ id-presets
+$ id-presets build
 ```
 
 Looks for iD [preset files][5] in `./presets/`, [field files][6] in `./fields/`, categories in `./categories/` and defaults in `./defaults.json`. Please see the [iD Presets README.md][7] for details about iD presets. Outputs `presets.json`, `translations.json` and `translate.json` in `./build/`.
@@ -37,6 +37,12 @@ Looks for iD [preset files][5] in `./presets/`, [field files][6] in `./fields/`,
 [5]: https://github.com/openstreetmap/iD/tree/master/data/presets#preset-files
 [6]: https://github.com/openstreetmap/iD/tree/master/data/presets#field-files
 [7]: https://github.com/openstreetmap/iD/tree/master/data/presets
+
+```
+$ id-presets lint
+```
+
+Lints the presets files without writing anything.
 
 ## API
 

@@ -5,6 +5,14 @@ var path = require('path')
 var fs = require('fs')
 var yaml = require('js-yaml')
 
+var argv = require('minimist')(process.argv.slice(2))
+var cmd = argv._[0] || 'build'
+
+if (['build', 'lint'].indexOf(cmd) < 0) {
+  console.error('Unknown command %s', cmd)
+  process.exit(1)
+}
+
 var generatePresets = require('../lib/presets')
 var generateTranslate = require('../lib/translate')
 var generateTranslations = require('../lib/translations')
@@ -15,10 +23,10 @@ var presetsBuildFile = path.join(buildDir, 'presets.json')
 var translationsBuildFile = path.join(buildDir, 'translations.json')
 var translateBuildFile = path.join(buildDir, 'translate.yaml')
 
-mkdirp.sync(buildDir)
-
 generatePresets(cwd, function (err, presets) {
   if (err) return done(err)
+  if (cmd === 'lint') return
+
   var translations = generateTranslations(presets.categories, presets.fields, presets.presets)
   var translate = generateTranslate(presets.fields, presets.presets, translations)
   var translateYaml = yaml.safeDump(
@@ -26,6 +34,7 @@ generatePresets(cwd, function (err, presets) {
     {sortKeys: sortKeys, lineWidth: -1}
   ).replace(/'.*#':/g, '#')
 
+  mkdirp.sync(buildDir)
   fs.writeFile(presetsBuildFile, stringify(presets), done)
   fs.writeFile(translationsBuildFile, stringify({en: {presets: translations}}), done)
   fs.writeFile(translateBuildFile, translateYaml, done)
