@@ -1,7 +1,7 @@
 # id-presets-builder
 
 [![npm version][1]][2]
-[![js-standard-style][6]][7]
+[![js-standard-style][3]][4]
 
 [1]: https://img.shields.io/npm/v/id-presets-builder.svg
 [2]: https://www.npmjs.com/package/id-presets-builder
