@@ -5,7 +5,14 @@ var path = require('path')
 var fs = require('fs')
 var yaml = require('js-yaml')
 
-var argv = require('minimist')(process.argv.slice(2))
+var argv = require('minimist')(process.argv.slice(2), {
+  default: {
+    dir: path.join(cwd, 'build')
+  },
+  alias: {
+    d: 'dir'
+  }
+})
 var cmd = argv._[0] || 'build'
 
 if (['build', 'lint'].indexOf(cmd) < 0) {
@@ -18,7 +25,7 @@ var generateTranslate = require('../lib/translate')
 var generateTranslations = require('../lib/translations')
 
 var cwd = process.cwd()
-var buildDir = path.join(cwd, 'build')
+var buildDir = argv.dir
 var presetsBuildFile = path.join(buildDir, 'presets.json')
 var translationsBuildFile = path.join(buildDir, 'translations.json')
 var translateBuildFile = path.join(buildDir, 'translate.yaml')
