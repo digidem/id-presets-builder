@@ -9,6 +9,7 @@ var argv = require('minimist')(process.argv.slice(2), {
   default: {
     dir: path.join(cwd, 'build')
   },
+  boolean: 'custom',
   alias: {
     d: 'dir'
   }
@@ -30,7 +31,10 @@ var presetsBuildFile = path.join(buildDir, 'presets.json')
 var translationsBuildFile = path.join(buildDir, 'translations.json')
 var translateBuildFile = path.join(buildDir, 'translate.yaml')
 
-generatePresets(cwd, function (err, presets) {
+var options = {}
+if (argv.custom) options.additionalProperties = true
+
+generatePresets(cwd, options, function (err, presets) {
   if (err) return done(err)
   if (cmd === 'lint') return
 
