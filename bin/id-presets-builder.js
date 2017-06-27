@@ -7,7 +7,7 @@ var yaml = require('js-yaml')
 
 var argv = require('minimist')(process.argv.slice(2), {
   default: {
-    dir: path.join(cwd, 'build')
+    dir: path.resolve('build')
   },
   boolean: 'custom',
   alias: {
