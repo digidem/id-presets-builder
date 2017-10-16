@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.2.2] - 2017-06-26
+### Fixed
+- Fix default build dir path
+
+## [1.2.1] - 2016-12-13
+### Fixed
+- Remove some stray console.log
+
 ## [1.2.0] - 2016-10-05
 ### Added
 - Command line option `--dir`, defaults to `./build`
