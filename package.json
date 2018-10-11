@@ -1,6 +1,6 @@
 {
   "name": "id-presets-builder",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Build iD presets",
   "main": "index.js",
   "bin": {
