@@ -68,7 +68,8 @@
                 "text",
                 "typeCombo",
                 "url",
-                "wikipedia"
+                "wikipedia",
+                "select_one"
             ],
             "required": true
         },

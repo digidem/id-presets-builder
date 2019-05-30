@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.3.0] - 2019-05-30
+### Added
+- New field type `select_one`
+
 ## [1.2.2] - 2017-06-26
 ### Fixed
 - Fix default build dir path
