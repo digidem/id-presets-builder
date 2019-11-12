@@ -1,6 +1,13 @@
-# Change Log
-All notable changes to this project will be documented in this file.
-This project adheres to [Semantic Versioning](http://semver.org/).
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.4.0](https://github.com/digidem/id-presets-builder/compare/v1.3.0...v1.4.0) (2019-11-12)
+
+
+### Features
+
+* Add new field type `select_multiple` ([29ff2cd](https://github.com/digidem/id-presets-builder/commit/29ff2cde6c33af1c6cf03a837b5e0fc5c3b670a5))
 
 ## [1.3.0] - 2019-05-30
 ### Added
