@@ -69,7 +69,8 @@
                 "typeCombo",
                 "url",
                 "wikipedia",
-                "select_one"
+                "select_one",
+                "select_multiple"
             ],
             "required": true
         },
