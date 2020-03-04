@@ -41,13 +41,13 @@ generatePresets(cwd, options, function (err, presets) {
   var translations = generateTranslations(presets.categories, presets.fields, presets.presets)
   var translate = generateTranslate(presets.fields, presets.presets, translations)
   var translateYaml = yaml.safeDump(
-    {en: {presets: translate}},
-    {sortKeys: sortKeys, lineWidth: -1}
+    { en: { presets: translate } },
+    { sortKeys: sortKeys, lineWidth: -1 }
   ).replace(/'.*#':/g, '#')
 
   mkdirp.sync(buildDir)
   fs.writeFile(presetsBuildFile, stringify(presets), done)
-  fs.writeFile(translationsBuildFile, stringify({en: {presets: translations}}), done)
+  fs.writeFile(translationsBuildFile, stringify({ en: { presets: translations } }), done)
   fs.writeFile(translateBuildFile, translateYaml, done)
 })
 
