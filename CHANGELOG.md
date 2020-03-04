@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/digidem/id-presets-builder/compare/v1.4.0...v1.4.1) (2020-03-04)
+
+
+### Bug Fixes
+
+* Fix warning messages and formatting ([dd1da1d](https://github.com/digidem/id-presets-builder/commit/dd1da1d0d37ff25b04780f38cb461138d306654b))
+
 ## [1.4.0](https://github.com/digidem/id-presets-builder/compare/v1.3.0...v1.4.0) (2019-11-12)
 
 
