@@ -17,7 +17,7 @@ var argv = require('minimist')(process.argv.slice(2), {
 var cmd = argv._[0] || 'build'
 
 if (['build', 'lint'].indexOf(cmd) < 0) {
-  console.error('Unknown command %s', cmd)
+  console.error('Unknown command:', cmd)
   process.exit(1)
 }
 
