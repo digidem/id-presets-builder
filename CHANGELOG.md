@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/digidem/id-presets-builder/compare/v1.4.2...v1.5.0) (2020-04-15)
+
+
+### Features
+
+* Add helperText property to fields ([324aeea](https://github.com/digidem/id-presets-builder/commit/324aeeaee2cc473eba5e1078e5a56dd84a76a491))
+
 ### [1.4.2](https://github.com/digidem/id-presets-builder/compare/v1.4.1...v1.4.2) (2020-03-04)
 
 
