@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/digidem/id-presets-builder/compare/v1.5.0...v2.0.0) (2020-04-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use schemas from mapeo-schema
+
+### Features
+
+* Use schemas from mapeo-schema ([879c5c3](https://github.com/digidem/id-presets-builder/commit/879c5c34410e914ce9a61a972ff980b84874493f))
+
 ## [1.5.0](https://github.com/digidem/id-presets-builder/compare/v1.4.2...v1.5.0) (2020-04-15)
 
 
