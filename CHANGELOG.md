@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/digidem/id-presets-builder/compare/v2.0.0...v2.0.1) (2022-05-18)
+
+
+### Bug Fixes
+
+* include field options in translatable strings ([cfcc94e](https://github.com/digidem/id-presets-builder/commit/cfcc94e809c6b16ff069c3cda1288ffd22e0a95e))
+
 ## [2.0.0](https://github.com/digidem/id-presets-builder/compare/v1.5.0...v2.0.0) (2020-04-17)
 
 
