@@ -13,13 +13,13 @@
   "license": "MIT",
   "dependencies": {
     "glob": "^7.0.5",
-    "js-yaml": "^3.6.1",
-    "jsonschema": "^1.1.0",
-    "lodash": "^4.17.11",
-    "mapeo-schema": "^1.9.0",
-    "minimist": "^1.2.0",
+    "js-yaml": "^3.14.0",
+    "jsonschema": "^1.4.1",
+    "lodash": "^4.17.21",
+    "mapeo-schema": "^1.10.1",
+    "minimist": "^1.2.6",
     "mkdirp": "^0.5.1",
-    "run-parallel": "^1.1.6"
+    "run-parallel": "^1.2.0"
   },
   "devDependencies": {
     "standard": "^7.1.2"
