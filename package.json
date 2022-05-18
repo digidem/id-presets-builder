@@ -22,7 +22,7 @@
     "run-parallel": "^1.2.0"
   },
   "devDependencies": {
-    "standard": "^7.1.2"
+    "standard": "^16.0.4"
   },
   "repository": {
     "type": "git",

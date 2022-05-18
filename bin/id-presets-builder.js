@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-var mkdirp = require('mkdirp')
-var path = require('path')
-var fs = require('fs')
-var yaml = require('js-yaml')
+const mkdirp = require('mkdirp')
+const path = require('path')
+const fs = require('fs')
+const yaml = require('js-yaml')
 
-var argv = require('minimist')(process.argv.slice(2), {
+const argv = require('minimist')(process.argv.slice(2), {
   default: {
     dir: path.resolve('build')
   },
@@ -14,33 +14,33 @@ var argv = require('minimist')(process.argv.slice(2), {
     d: 'dir'
   }
 })
-var cmd = argv._[0] || 'build'
+const cmd = argv._[0] || 'build'
 
 if (['build', 'lint'].indexOf(cmd) < 0) {
   console.error('Unknown command:', cmd)
   process.exit(1)
 }
 
-var generatePresets = require('../lib/presets')
-var generateTranslate = require('../lib/translate')
-var generateTranslations = require('../lib/translations')
+const generatePresets = require('../lib/presets')
+const generateTranslate = require('../lib/translate')
+const generateTranslations = require('../lib/translations')
 
-var cwd = process.cwd()
-var buildDir = argv.dir
-var presetsBuildFile = path.join(buildDir, 'presets.json')
-var translationsBuildFile = path.join(buildDir, 'translations.json')
-var translateBuildFile = path.join(buildDir, 'translate.yaml')
+const cwd = process.cwd()
+const buildDir = argv.dir
+const presetsBuildFile = path.join(buildDir, 'presets.json')
+const translationsBuildFile = path.join(buildDir, 'translations.json')
+const translateBuildFile = path.join(buildDir, 'translate.yaml')
 
-var options = {}
+const options = {}
 if (argv.custom) options.additionalProperties = true
 
 generatePresets(cwd, options, function (err, presets) {
   if (err) return done(err)
   if (cmd === 'lint') return
 
-  var translations = generateTranslations(presets.categories, presets.fields, presets.presets)
-  var translate = generateTranslate(presets.fields, presets.presets, translations)
-  var translateYaml = yaml.safeDump(
+  const translations = generateTranslations(presets.categories, presets.fields, presets.presets)
+  const translate = generateTranslate(presets.fields, presets.presets, translations)
+  const translateYaml = yaml.safeDump(
     { en: { presets: translate } },
     { sortKeys: sortKeys, lineWidth: -1 }
   ).replace(/'.*#':/g, '#')
@@ -57,9 +57,11 @@ function stringify (o) {
 
 // comment keys end with '#' and should sort immediately before their related key.
 function sortKeys (a, b) {
-  return (a === b + '#') ? -1
-    : (b === a + '#') ? 1
-      : (a > b ? 1 : a < b ? -1 : 0)
+  return (a === b + '#')
+    ? -1
+    : (b === a + '#')
+        ? 1
+        : (a > b ? 1 : a < b ? -1 : 0)
 }
 
 function done (err) {
