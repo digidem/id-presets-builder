@@ -4,10 +4,6 @@ import mkdirp from 'mkdirp'
 import path from 'node:path'
 import fs from 'node:fs'
 import yaml from 'js-yaml'
-// const mkdirp = require('mkdirp')
-// const path = require('path')
-// const fs = require('fs')
-// const yaml = require('js-yaml')
 import minimist from 'minimist'
 
 const argv = minimist(process.argv.slice(2), {
