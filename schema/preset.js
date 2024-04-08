@@ -1,8 +1,5 @@
-const presetSchema = require('mapeo-schema/schema/preset.json')
-
+const {valueSchemas} = await import('@mapeo/schema')
+export const presetSchema = valueSchemas['preset']
 // mapeo-schema defines presets as having an id property. For preset definitions
 // this comes from the filename, so it is not required in the JSON definitions
-module.exports = {
-  ...presetSchema,
-  required: presetSchema.required.filter(prop => prop !== 'id')
-}
+export const required = presetSchema.required.filter(prop => prop !== 'id')
