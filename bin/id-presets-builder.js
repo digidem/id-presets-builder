@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
-const mkdirp = require('mkdirp')
-const path = require('path')
-const fs = require('fs')
-const yaml = require('js-yaml')
+import mkdirp from 'mkdirp'
+import path from 'node:path'
+import fs from 'node:fs'
+import yaml from 'js-yaml'
+import minimist from 'minimist'
 
-const argv = require('minimist')(process.argv.slice(2), {
+const argv = minimist(process.argv.slice(2), {
   default: {
     dir: path.resolve('build')
   },
@@ -21,9 +22,9 @@ if (['build', 'lint'].indexOf(cmd) < 0) {
   process.exit(1)
 }
 
-const generatePresets = require('../lib/presets')
-const generateTranslate = require('../lib/translate')
-const generateTranslations = require('../lib/translations')
+import generatePresets from '../lib/presets.js'
+import generateTranslate from '../lib/translate.js'
+import generateTranslations from '../lib/translations.js'
 
 const cwd = process.cwd()
 const buildDir = argv.dir

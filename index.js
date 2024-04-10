@@ -1,3 +1,6 @@
-module.exports.generatePresets = require('./lib/presets')
-module.exports.generateTranslations = require('./lib/translations')
-module.exports.generateTranslate = require('./lib/translate')
+import generatePresets from './lib/presets.js'
+import generateTranslations from './lib/translations.js'
+import generateTranslate from './lib/translate.js'
+
+export default { generatePresets, generateTranslations, generateTranslate }
+

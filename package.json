@@ -3,6 +3,7 @@
   "version": "2.0.1",
   "description": "Build iD presets",
   "main": "index.js",
+  "type": "module",
   "bin": {
     "id-presets": "bin/id-presets-builder.js"
   },
@@ -12,11 +13,11 @@
   "author": "Gregor MacLennan / Digital Democracy",
   "license": "MIT",
   "dependencies": {
+    "@mapeo/schema": "^3.0.0-next.14",
     "glob": "^7.0.5",
     "js-yaml": "^3.14.0",
     "jsonschema": "^1.4.1",
     "lodash": "^4.17.21",
-    "mapeo-schema": "^1.10.1",
     "minimist": "^1.2.6",
     "mkdirp": "^0.5.1",
     "run-parallel": "^1.2.0"
