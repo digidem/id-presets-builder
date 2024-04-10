@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/digidem/id-presets-builder/compare/v2.0.1...v3.0.0) (2024-04-10)
+
+
+### Bug Fixes
+
+* Store preset with valid default props ([25bf275](https://github.com/digidem/id-presets-builder/commit/25bf2751f669c5c94ee4ab2177ac19e783f1e214))
+
+### ⚠ BREAKING CHANGES
+
+* Update to ES modules, use `import` and `export` instead of `require` and `module.exports` ([25bf2751](https://github.com/digidem/id-presets-builder/commit/25bf2751f669c5c94ee4ab2177ac19e783f1e214))
+* Update to latest [@mapeo/schema@3.0.0-next.14](https://github.com/digidem/mapeo-schema) ([25bf2751](https://github.com/digidem/id-presets-builder/commit/25bf2751f669c5c94ee4ab2177ac19e783f1e214))
+
 ### [2.0.1](https://github.com/digidem/id-presets-builder/compare/v2.0.0...v2.0.1) (2022-05-18)
 
 
