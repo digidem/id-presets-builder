@@ -28,10 +28,10 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - name: Use Node.js 14
+      - name: Use Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: 20
       - uses: nearform-actions/optic-release-automation-action@v4
         with:
           commit-message: 'Release {version}'
