@@ -13,7 +13,7 @@
   "author": "Gregor MacLennan / Digital Democracy",
   "license": "MIT",
   "dependencies": {
-    "@mapeo/schema": "^3.0.0-next.14",
+    "@mapeo/schema": "^3.0.0-next.22",
     "glob": "^7.0.5",
     "js-yaml": "^3.14.0",
     "jsonschema": "^1.4.1",
