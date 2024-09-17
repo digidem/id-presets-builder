@@ -1,2 +1,2 @@
-import { valueSchemas } from '@mapeo/schema'
-export const presetSchema = valueSchemas['preset']
+import { valueSchemas } from '@comapeo/schema'
+export const presetSchema = valueSchemas.preset
