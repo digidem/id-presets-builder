@@ -1,2 +1,2 @@
-import { valueSchemas } from '@mapeo/schema'
-export const fieldSchema = valueSchemas['field']
+import { valueSchemas } from '@comapeo/schema'
+export const fieldSchema = valueSchemas.field
